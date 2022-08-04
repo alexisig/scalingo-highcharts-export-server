@@ -8,7 +8,7 @@
         "highcharts-export-server": "*"
     },
     "scripts": {
-        "build": "node build.js",
+        "build": "pwd;ls -lh;node build.js",
         "start": "highcharts-export-server --enableServer 1 --port $PORT"
     }
 }
