@@ -2,12 +2,12 @@
     "name": "highcharts-export-server",
     "version": "1.0.0",
     "engines": {
-      "node": "13"
+        "node": "13"
     },
     "dependencies": {
         "highcharts-export-server": "*"
     },
     "scripts": {
-        "start": "highcharts-export-server --enableServer 1 --port 8090"
+        "start": "highcharts-export-server --enableServer 1 --port $PORT"
     }
 }
