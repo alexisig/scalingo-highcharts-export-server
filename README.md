@@ -1,7 +1,13 @@
 # scalingo-highcharts-export-server
 Deploy an highcharts export server on scalingo
 
-Just link a scalingo app to this repository and trigger a deployment.
+## Deployment
+
+Add two environment variable in your scalingo app:
+* ACCEPT_HIGHCHARTS_LICENSE=YES
+* HIGHCHARTS_VERSION=9.2.2
+
+Then add an integration link this repository and trigger a deployment.
 
 ## Tests with docker
 
