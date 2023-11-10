@@ -1,10 +1,9 @@
 # docker deployment of https://github.com/highcharts/node-export-server
 # docker run -it --rm --name highcharts -p 8090:8090 highchart-export
 # FROM node:14
-FROM node:13
+FROM node:latest
 
-ENV ACCEPT_HIGHCHARTS_LICENSE="YES"
-ENV HIGHCHARTS_VERSION=9.2.2
+ENV ACCEPT_HIGHCHARTS_LICENSE=1
 RUN npm install highcharts-export-server -g  --unsafe-perm
 
 WORKDIR /usr/share/fonts/truetype

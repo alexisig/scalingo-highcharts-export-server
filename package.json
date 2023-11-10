@@ -2,7 +2,7 @@
     "name": "highcharts-export-server",
     "version": "1.0.0",
     "engines": {
-        "node": "13"
+        "node": "21"
     },
     "dependencies": {
         "highcharts-export-server": "*"
