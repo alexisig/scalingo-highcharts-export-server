@@ -9,7 +9,7 @@ This repository contains:
 
 ## Deploy on scalingo
 
-Not working yet with v3
+Just link this repo to your app and trigger a deployment.
 
 
 ## Test locally
