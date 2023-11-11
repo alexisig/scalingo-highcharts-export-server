@@ -8,7 +8,7 @@
         "highcharts-export-server": "*"
     },
     "scripts": {
-        "build": "node ./node_modules/highcharts-export-server/build.js",
+        "preinstall": "npm i -g highcharts-export-server",
         "start": "highcharts-export-server --enableServer 1 --port $PORT"
     }
 }

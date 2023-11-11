@@ -1,18 +1,29 @@
 # scalingo-highcharts-export-server
-Deploy an highcharts export server on scalingo
 
-## Deployment
+Deploy an highcharts export server v3 on scalingo.
 
-Add two environment variable in your scalingo app:
-* ACCEPT_HIGHCHARTS_LICENSE=YES
-* HIGHCHARTS_VERSION=9.2.2
+This repository contains:
 
-Then add an integration link this repository and trigger a deployment.
+* Scalingo configuration and you can deploy simply linking this repo to your app
+* Dockerfile to build and test locally
 
-## Tests with docker
+## Deploy on scalingo
 
-docker run -it --rm --name highcharts -p 8081:8080 onsdigital/highcharts-export-node
+Not working yet with v3
+
+
+## Test locally
+
+1. Build the image `docker build -t highchart-server .`
+2. Run it `docker run -p 8080:8080 highchart-server`
+
+You should be able to generate a graph with following command:
 
 ```
-curl -H "Content-Type: application/json" -X POST -d '{"infile":{"title": {"text": "Steep Chart"}, "xAxis": {"categories": ["Jan", "Feb", "Mar"]}, "series": [{"data": [29.9, 71.5, 106.4]}]}}' 127.0.0.1:8091 -o mychart.png
+curl -H "Content-Type: application/json" -X POST -d '{"infile":{"title": {"text": "Steep Chart"}, "xAxis": {"categories": ["Jan", "Feb", "Mar"]}, "series": [{"data": [29.9, 71.5, 106.4]}]}}' 127.0.0.1:8080 -o mychart.png
 ```
+
+## Usefull docs
+
+* https://doc.scalingo.com/languages/nodejs/puppeteer
+* https://stackoverflow.com/questions/6480549/install-dependencies-globally-and-locally-using-package-json
