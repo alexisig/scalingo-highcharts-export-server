@@ -27,14 +27,3 @@ curl -H "Content-Type: application/json" -X POST -d '{"infile":{"title": {"text"
 
 * https://doc.scalingo.com/languages/nodejs/puppeteer
 * https://stackoverflow.com/questions/6480549/install-dependencies-globally-and-locally-using-package-json
-
-
-
-
-## Old doc
-
-### Deployment
-
-Add two environment variable in your scalingo app:
-* ACCEPT_HIGHCHARTS_LICENSE=YES
-* HIGHCHARTS_VERSION=9.2.2
