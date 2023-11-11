@@ -27,3 +27,16 @@ curl -H "Content-Type: application/json" -X POST -d '{"infile":{"title": {"text"
 
 * https://doc.scalingo.com/languages/nodejs/puppeteer
 * https://stackoverflow.com/questions/6480549/install-dependencies-globally-and-locally-using-package-json
+
+## cheat sheet
+
+Push image to docker hub
+```
+docker login -u USERNAME
+docker tag highchart-server swannbm/scalingo-highcharts-export-server
+docker tag highchart-server swannbm/scalingo-highcharts-export-server:v3
+docker tag highchart-server swannbm/scalingo-highcharts-export-server:latest
+docker push swannbm/scalingo-highcharts-export-server
+docker push swannbm/scalingo-highcharts-export-server:v3
+docker push swannbm/scalingo-highcharts-export-server:latest
+```
