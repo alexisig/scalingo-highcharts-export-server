@@ -1,7 +1,7 @@
 # docker deployment of https://github.com/highcharts/node-export-server
 # docker run -it --rm --name highcharts -p 8090:8090 highchart-export
 # FROM node:14
-FROM --platform=linux/amd64 node:21
+FROM --platform=linux/amd64 node:23
 
 ENV ACCEPT_HIGHCHARTS_LICENSE=1
 
