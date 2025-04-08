@@ -8,7 +8,7 @@
         "highcharts-export-server": "4.0.2"
     },
     "scripts": {
-        "preinstall": "npm i -g highcharts-export-server",
+        "preinstall": "npm i -g highcharts-export-server@4.0.2",
         "start": "highcharts-export-server --enableServer 1 --port $PORT"
     }
 }
