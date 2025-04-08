@@ -1,7 +1,7 @@
 # docker deployment of https://github.com/highcharts/node-export-server
 # docker run -it --rm --name highcharts -p 8090:8090 highchart-export
 # FROM node:14
-FROM node:21
+FROM --platform=linux/amd64 node:21
 
 ENV ACCEPT_HIGHCHARTS_LICENSE=1
 
@@ -13,7 +13,7 @@ RUN apt-get update \
     && apt-get install -y google-chrome-stable libnss3 libxss1 fonts-liberation libappindicator3-1 xdg-utils \
     && rm -rf /var/lib/apt/lists/*
 
-RUN npm install highcharts-export-server -g --unsafe-perm
+RUN npm install highcharts-export-server@4.0.2 -g --unsafe-perm
 
 COPY . .
 
