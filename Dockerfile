@@ -4,6 +4,8 @@
 FROM --platform=linux/amd64 node:23
 
 ENV ACCEPT_HIGHCHARTS_LICENSE=1
+ENV CHROME_DEVEL_SANDBOX /usr/local/sbin/chrome-devel-sandbox
+
 
 RUN apt-get update \
     && apt-get install -y wget gnupg \
