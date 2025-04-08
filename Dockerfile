@@ -5,8 +5,7 @@ FROM --platform=linux/amd64 node:23
 
 ENV ACCEPT_HIGHCHARTS_LICENSE=1
 ENV CHROME_DEVEL_SANDBOX /usr/local/sbin/chrome-devel-sandbox
-ENV HIGHCHARTS_CDN_URL https://cdnjs.cloudflare.com/ajax/libs/highcharts/
-
+ENV HIGHCHARTS_VERSION="12.1.2"
 
 RUN apt-get update \
     && apt-get install -y wget gnupg \
