@@ -5,7 +5,7 @@
         "node": "23"
     },
     "dependencies": {
-        "highcharts-export-server": "*"
+        "highcharts-export-server": "4.0.2"
     },
     "scripts": {
         "preinstall": "npm i -g highcharts-export-server",
