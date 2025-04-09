@@ -35,5 +35,5 @@ ADD fonts/OpenSans-BoldItalic.ttf OpenSans-BoldItalic.ttf
 ADD fonts/OpenSans-SemiboldItalic.ttf OpenSans-SemiboldItalic.ttf
 ADD fonts/OpenSans-ExtraBoldItalic.ttf OpenSans-ExtraBoldItalic.ttf
 
-CMD ["highcharts-export-server", "--enableServer", "1", "--port", "8080", "--host", "0.0.0.0"]
+CMD ["highcharts-export-server", "--enableServer", "1", "--port", "8080", "--host", "0.0.0.0", "--enableDebug"]
 
