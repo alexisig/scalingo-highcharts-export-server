@@ -10,6 +10,6 @@
     },
     "scripts": {
         "preinstall": "npm i -g highcharts-export-server@5.0.0",
-        "start": "start.sh"
+        "start": "./start.sh"
     }
 }
