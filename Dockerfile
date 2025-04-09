@@ -15,7 +15,7 @@ RUN apt-get update \
     && apt-get install -y google-chrome-stable libnss3 libxss1 fonts-liberation libappindicator3-1 xdg-utils \
     && rm -rf /var/lib/apt/lists/*
 
-RUN npm install highcharts-export-server@4.0.2 -g --unsafe-perm
+RUN npm install highcharts-export-server@5.0.0 -g --unsafe-perm
 
 COPY . .
 

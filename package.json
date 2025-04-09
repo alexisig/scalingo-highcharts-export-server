@@ -5,11 +5,11 @@
         "node": "23"
     },
     "dependencies": {
-        "highcharts-export-server": "4.0.2",
+        "highcharts-export-server": "5.0.0",
         "highcharts": "^11.4.7"
     },
     "scripts": {
-        "preinstall": "npm i -g highcharts-export-server@4.0.2",
+        "preinstall": "npm i -g highcharts-export-server@5.0.0",
         "start": "highcharts-export-server --enableServer 1 --port $PORT"
     }
 }
